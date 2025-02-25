@@ -1,4 +1,3 @@
-// Importing Images
 import product1 from "../app/assets/images/img1.jpg";
 import product2 from "../app/assets/images/img2.jpg";
 import product3 from "../app/assets/images/img3.jpg";
@@ -12,7 +11,6 @@ import product10 from "../app/assets/images/pexels-enginakyurt-4458519.jpg";
 import product11 from "../app/assets/images/pexels-quang-viet-nguyen-107013384-9561297.jpg";
 import product12 from "../app/assets/images/pexels-yaazhini-17307532.jpg";
 
-// Product Data Array
 const products = [
     { image: product1, title: "boAt Airdopes Joy", description: "Experience high-quality sound with the boAt Airdopes Joy. Designed for comfort and performance.", price: "$200" },
     { image: product2, title: "Aspire 3D 15 SpatialLabs Edition Laptop", description: "Unlock immersive 3D experiences with the Aspire 3D 15 Laptop, powered by SpatialLabs technology.", price: "$3249" },
@@ -29,7 +27,6 @@ const products = [
 ];
 
 
-// Function to Generate Product Cards
 function generateProductCards() {
     const productList = document.getElementById("product-list");
     if (!productList) {
@@ -58,10 +55,4 @@ function generateProductCards() {
         productList.appendChild(productCard);
     });
 }
-
-// Run function when DOM is fully loaded
 document.addEventListener("DOMContentLoaded", generateProductCards);
-
-
-// Run function when DOM is fully loaded
-// document.addEventListener("DOMContentLoaded", generateProductCards);

@@ -16,7 +16,6 @@ h1 {
     font-weight: 700;
 }
 
-/* Ensuring product list is properly aligned */
 #product-list {
     display: flex;
     flex-wrap: wrap;
@@ -24,7 +23,6 @@ h1 {
     gap: 20px;
 }
 
-/* Product Card */
 .card {
     border: none;
     border-radius: 12px;
@@ -38,11 +36,10 @@ h1 {
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
     }
 
-    /* Ensure all images are the same size */
     img {
-        width: 100%; /* Makes it responsive */
-        height: 250px; /* Fixed height */
-        object-fit: cover; /* Crops the image to fit */
+        width: 100%; 
+        height: 250px;
+        object-fit: cover;
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
     }
