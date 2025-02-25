@@ -1,0 +1,89 @@
+body {
+    background-color: #f5f5f5;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/* Ensuring product list is properly aligned */
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Product Card */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+    overflow: hidden;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Ensure all images are the same size */
+    img {
+        width: 100%; /* Makes it responsive */
+        height: 250px; /* Fixed height */
+        object-fit: cover; /* Crops the image to fit */
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    .card-body {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .card-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .card-text {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .price {
+        font-size: 20px;
+        font-weight: bold;
+        color: #e44d26;
+        margin-bottom: 15px;
+    }
+
+    .btn-primary {
+        width: 100%;
+        background-color: #ff6600;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: #cc5200;
+        }
+    }
+}
+
